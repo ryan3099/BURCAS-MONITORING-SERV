@@ -58,14 +58,14 @@
       align-items: center;
       justify-content: space-between;
     }
-    .map {
-      width: 100%;
-      height: 300px;
-      background-color: #ccc;
-      margin-top: 20px;
-    }
     .form-group {
       margin-bottom: 15px;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -126,14 +126,11 @@
         <button type="submit">Send</button>
       </form>
     </div>
-    <div class="map">
-      <p style="padding: 120px; text-align: center; color: #555;">Map showing Sherman Oaks, CA</p>
-    </div>
+    <iframe src="https://maps.google.com/maps?q=Sherman%20Oaks,%20CA&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>
   </section>
 
   <footer>
     <p>Email: admin@burmoniserv.shop | Phone: 234-433-3901</p>
-    <p>&copy; 2025 BURCAS MONITORING SERV. All rights reserved.</p>
   </footer>
 </body>
 </html>
