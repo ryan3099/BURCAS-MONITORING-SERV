@@ -1,67 +1,139 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CAP Garland, LLC</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BURCAS MONITORING SERV</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f0f0f0;
+      background-color: #f4f4f4;
       color: #333;
     }
     header {
-      background-color: #003366;
+      background-color: #2d2d2d;
       color: white;
-      padding: 30px 20px;
+      padding: 40px;
       text-align: center;
     }
     section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+      padding: 40px;
+      background-color: white;
+      margin: 20px;
+      border-radius: 10px;
     }
-    h1, h2 {
-      color: #003366;
+    .services {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
     }
-    .contact {
-      background: #fff;
+    .service {
+      flex: 1 1 30%;
+      margin: 10px;
+      background-color: #fafafa;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .service img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .service-content {
       padding: 20px;
-      border-left: 5px solid #003366;
-      margin-top: 30px;
     }
     footer {
-      background-color: #003366;
+      background-color: #2d2d2d;
       color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 50px;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .contact, .welcome {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .map {
+      width: 100%;
+      height: 300px;
+      background-color: #ccc;
+      margin-top: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>CAP Garland, LLC</h1>
-    <p>Private Investment Fund</p>
+    <h1>BURCAS MONITORING SERV</h1>
+    <p>4419 VAN NUYS BLVD, STE 305, SHERMAN OAKS, CA 91403</p>
   </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>CAP Garland, LLC is a Washington-based private investment fund focused on delivering value through diversified investment strategies.</p>
+  <section class="services">
+    <div class="service">
+      <img src="https://images.unsplash.com/photo-1502224562085-639556652f33?q=80" alt="Service 1">
+      <div class="service-content">
+        <h3>Residential Monitoring</h3>
+        <p>Professional home monitoring services to ensure your peace of mind 24/7.</p>
+      </div>
+    </div>
+    <div class="service">
+      <img src="https://images.unsplash.com/photo-1625745450753-3c0b0678b2ae?q=80" alt="Service 2">
+      <div class="service-content">
+        <h3>Business Security</h3>
+        <p>Comprehensive security systems and monitoring for businesses and offices.</p>
+      </div>
+    </div>
+    <div class="service">
+      <img src="https://images.unsplash.com/photo-1596806032217-146c84269ffc?q=80" alt="Service 3">
+      <div class="service-content">
+        <h3>24/7 Emergency Response</h3>
+        <p>Round-the-clock monitoring and immediate response to incidents and alerts.</p>
+      </div>
+    </div>
+  </section>
 
-    <h2>Contact</h2>
-    <div class="contact">
-      <p><strong>Address:</strong> 915 W 2nd Ave, Spokane, WA 99201</p>
-      <p><strong>Email:</strong> <a href="mailto:ryanberg@capgarland.shop">ryanberg@capgarland.shop</a></p>
-      <p><strong>Phone:</strong> (509) 822-3850</p>
+  <section class="welcome">
+    <div>
+      <h2>Welcome to BURCAS MONITORING SERV</h2>
+      <p>We provide top-tier monitoring and security services tailored to your personal or business needs. Our experienced team ensures reliability and rapid response you can count on.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1544194215-541c2d3561a4?q=80" alt="Welcome Image" style="max-width: 400px; border-radius: 10px;">
+  </section>
+
+  <section class="contact">
+    <div>
+      <h2>Contact Us</h2>
+      <form>
+        <div class="form-group">
+          <label>Name:</label><br>
+          <input type="text" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <label>Email:</label><br>
+          <input type="email" placeholder="Your Email">
+        </div>
+        <div class="form-group">
+          <label>Message:</label><br>
+          <textarea placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <div class="map">
+      <p style="padding: 120px; text-align: center; color: #555;">Map showing Sherman Oaks, CA</p>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 CAP Garland, LLC. All rights reserved.
+    <p>Email: admin@burmoniserv.shop | Phone: 234-433-3901</p>
+    <p>&copy; 2025 BURCAS MONITORING SERV. All rights reserved.</p>
   </footer>
 </body>
 </html>
